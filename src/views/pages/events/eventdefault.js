@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: '20px',
     width: '280px',
     height: '55px',
+    marginBottom: '21px',
     borderRadius: '20px',
     color: 'white',
     textTransform: 'capitalize',
@@ -25,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     background: '#291757',
     [theme.breakpoints.down('xs')]: {
       marginTop: '29px',
-      marginLeft: '215px'
+      marginLeft: '0px'
     }
   }
 }));

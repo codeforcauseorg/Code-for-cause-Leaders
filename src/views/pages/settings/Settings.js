@@ -91,9 +91,20 @@ const useStyles = makeStyles(theme => ({
     padding: '8px 16px',
     backgroundColor: '#291757',
     borderRadius: '20px',
-    marginLeft: '16px',
+
     marginTop: 12,
-    marginBottom: 16
+    marginBottom: 12
+  },
+  image: {
+    marginLeft: '51px',
+    marginTop: '20px',
+    [theme.breakpoints.down('sm')]: {
+      height: '300px'
+    },
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+      height: '0px'
+    }
   }
 }));
 
@@ -295,11 +306,11 @@ function Settings() {
                   </Grid>
                 </Grid>
               </Box>
-              <Box maxWidth="28em" minWidth="24em">
+              <Box>
                 <img
                   src=".././static/images/event_img.jpg"
                   alt="gallery-icon"
-                  style={{ marginLeft: '51px', marginTop: '20px' }}
+                  className={classes.image}
                 />
               </Box>
             </Box>
