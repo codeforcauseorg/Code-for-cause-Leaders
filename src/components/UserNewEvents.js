@@ -10,7 +10,8 @@ const useStyles = makeStyles(() => ({
     color: '#291757',
     fontFamily: 'Montserrat',
     marginBottom: '21px',
-    marginTop: '21px'
+    marginTop: '0px',
+    marginLeft: '21px'
   },
   topContainer: {
     width: '150%',

@@ -204,7 +204,7 @@ export default function IndividualEvent() {
           bookmarked: firebase.firestore.FieldValue.arrayRemove(eventID)
         })
         .then(() => {
-          handleSnackBar('Removed Bookmark', 'warning');
+          handleSnackBar('Removed Bookmark', 'error');
           setBookmark(!bookmark);
         });
     } else {
@@ -213,7 +213,7 @@ export default function IndividualEvent() {
           bookmarked: firebase.firestore.FieldValue.arrayUnion(eventID)
         })
         .then(() => {
-          handleSnackBar('Added Bookmark', 'success');
+          handleSnackBar('Added Bookmark', 'warning');
           setBookmark(!bookmark);
         });
     }

@@ -236,11 +236,11 @@ export default function DrawerLayout({ children }) {
               <Avatar
                 className={classes.idavatar}
                 alt="ProfileIcon"
-                src="./static/profile/icons/icons.png"
+                src={user?.photoURL}
               />
               <div style={{ display: 'block', marginLeft: '10px' }}>
                 <Typography style={{ fontSize: '18px', fontWeight: '600' }}>
-                  John Doe
+                  {user?.displayName}
                 </Typography>
                 <div style={{ display: 'flex' }}>
                   <Typography variant="subtitle1" className={classes.idtext}>
